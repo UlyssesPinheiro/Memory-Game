@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Memory Game</title>
+
+  <!-- Stylesheets CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles\styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+  <script src="Index.js" async></script>
+</head>
+
+<body>
+  <div id="Game-Body">
+    <h1>Memory Game</h1>
+    <!-- Later, i'll have to create a function that generates these input cards -->
+    <div id="Game-Cards">
+      <input class="card 1" onclick="buttoclicked(1)" type="image" src="Imgs/card.png" />
+      <input class="card 2" onclick="buttoclicked(2)" type="image" src="Imgs/card.png" />
+      <input class="card 3" onclick="buttoclicked(3)" type="image" src="Imgs/card.png" />
+      <input class="card 4" onclick="buttoclicked(4)" type="image" src="Imgs/card.png" />
+      <input class="card 5" onclick="buttoclicked(5)" type="image" src="Imgs/card.png" />
+      <input class="card 6" onclick="buttoclicked(6)" type="image" src="Imgs/card.png" />
+      <input class="card 7" onclick="buttoclicked(7)" type="image" src="Imgs/card.png" />
+      <input class="card 8" onclick="buttoclicked(8)" type="image" src="Imgs/card.png" />
+    </div>
+  </div>
+  <br>
+  <button type="button" class="start-button btn btn-large" onclick="restartGame()" name="button">Restart Game</button>
+
+
+
+
+
+
+
+  <!-- Credits -->
+  <div id="Credits">
+    <p>Game made by Ulysses Pinheiro - 2021</p>
+
+    <!-- Card game - surang
+        insects - Freepik -->
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  </div>
+
+
+
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
