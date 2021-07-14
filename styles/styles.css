@@ -1,0 +1,88 @@
+body{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Yomogi', cursive;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 4rem;
+}
+
+input{
+  transition: all 0.4s;
+}
+
+/* ================================Cards====================================== */
+#Game-Cards{
+  width: 600px;
+  display: inline-block;
+}
+.card-div{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.card-div-size1{
+  width: 130px;
+  height: 150px;
+  margin: 5px;
+}
+.card-div-size2{
+  width: 110px;
+  height: 135px;
+  margin: 3px;
+}
+.card-div-size3{
+  width: 100px;
+  height: 120px;
+  margin: 3px;
+}
+.card-div-size4{
+  width: 85px;
+  height: 100px;
+  margin: 3px;
+}
+.card{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.flip{
+  width: 0;
+  height: 100%;
+}
+/* ================================buttons====================================== */
+.buttons-div{
+  position: relative;
+  display: inline-block;
+  width: 230px;
+}
+
+.reload-button{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.difficulty-div{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+.difficulty-selector-button{
+  display: block;
+  width: 180px;
+}
+.difficulty-button{
+  display: block;
+  background-color: white;
+  width: 180px;
+}
+.hidden{
+  visibility: hidden;
+}
+/* ================================Credits====================================== */
+#Credits{
+  padding: 70px 0 0;
+}
