@@ -153,30 +153,29 @@ var lastCard = "";
 
 //detecting button presses
 function buttoclicked(button) {
-  //usuário clica na carta
+  //user clicks on the card
   if (allowclick === true) {
     if ($("." + button + ".card").hasClass("locked") === false) {
-      //A Carta está travada?
       //alert("Card is not Locked");
       if (firstCard === true) {
-        //É a primeira carta?
+        //First Card
         //alert("First Card");
         flipCardInsect(button);
         $("." + button + ".card").toggleClass("locked");
         lastCard = button; // saves the last card
         firstCard = false;
       } else {
-        //Não é a primeira carta
+        //Not the first card
         //alert("Not the first Card");
         if (gamePattern[button - 1] === gamePattern[lastCard - 1]) {
-          // é igual a carta anterior
+          // Same as last card
           //alert("same as last card:" + gamePattern[button - 1] + " and " + gamePattern[lastCard - 1]);
           flipCardInsect(button);
           $("." + button + ".card").toggleClass("locked"); // trava a Carta
-          firstCard = true; // libera para selecionar o próximo par
+          firstCard = true; // Unlocks clicking to select next card pair
           gameWin();
         } else if (firstCard === false) {
-          //Não é igual a ultima Carta
+          //Not the same as the last card
           //alert("Not the same as the last card: " + gamePattern[button - 1] + " and " + gamePattern[lastCard - 1]);
           flipCardInsect(button);
           allowclick = false;
